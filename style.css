@@ -370,6 +370,13 @@ body {
   transition: opacity 1s, transform 1s, filter 1s;
 }
 
+.show-modal {
+  display: block;
+  transform: translateY(0);
+  filter: blur(0);
+  opacity: 1;
+}
+
 /* Modal Content/Box */
 .modal-content {
   background-color: var(--bg-dark);

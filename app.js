@@ -7,6 +7,8 @@ async function getJSON(url) {
   }
 }
 
+let hiddenProjects = [];
+
 getJSON("projects.json").then((json) => {
   json.forEach((project) => {
     const projectCard = document.createElement("article");
@@ -22,20 +24,47 @@ getJSON("projects.json").then((json) => {
           </div>
     `;
     projectCard.classList.add("project", "card-style", "hidden");
+    hiddenProjects.push(projectCard);
     document.getElementById("project-grid").appendChild(projectCard);
+
+    showHiddenElements();
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+function showHiddenElements() {
+  const hiddenElements = document.querySelectorAll(".hidden");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
-    }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    });
   });
-});
 
-hiddenElements.forEach((el) => {
-  observer.observe(el);
+  hiddenElements.forEach((el) => {
+    observer.observe(el);
+  });
+
+  hiddenProjects.forEach((el) => {
+    observer.observe(el);
+  });
+}
+
+const modal = document.getElementById("myModal");
+
+getJSON("projects.json").then((projects) => {
+  for (let i = 0; i < hiddenProjects.length; i++) {
+    const el = hiddenProjects[i];
+
+    // Event Listener
+    el.addEventListener("click", () => {
+      console.log(projects[i]);
+      modal.classList.add("show-modal");
+      document.getElementById("article-title").textContent = `${projects[i].name}`;
+      document.getElementsByClassName(
+        "popup-article"
+      )[0].innerHTML = `${projects[i].article}`;
+    });
+  }
 });

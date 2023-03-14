@@ -20,48 +20,17 @@
 
     <section class="dot-background wrapper">
       <h2 class="hidden">Notable Projects</h2>
-      <div id="project-grid" class="card-list card-grid">
-      </div>
+      <div id="project-grid" class="card-list card-grid"></div>
     </section>
 
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <header>
+        <header id="article-header">
           <img id="close-modal" src="img/x.svg" alt="close icon" />
           <h2 id="article-title" class="hidden">Prototype of a weather app</h2>
         </header>
-        <div class="popup-article">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in
-            urna vel tellus hendrerit dictum. Aenean nec justo at ante consequat
-            consectetur. Mauris et odio ornare, hendrerit tortor eget, sagittis
-            massa. Suspendisse fermentum iaculis dui, ac convallis sem tristique
-            ut. Praesent a pretium diam, nec fermentum mauris. Suspendisse sed
-            diam sit amet mauris elementum elementum. Praesent sem nibh, finibus
-            ut lobortis in, fringilla nec odio. Vestibulum id ullamcorper
-            tortor, id vehicula quam. Etiam consectetur ultrices pharetra.
-            Phasellus non blandit dolor, tincidunt aliquam est. Donec ornare
-            justo ut quam auctor consequat. Donec vehicula sagittis nibh, nec
-            dictum metus ullamcorper quis. Interdum et malesuada fames ac ante
-            ipsum primis in faucibus. Aliquam justo lectus, blandit non suscipit
-            ut, dignissim et elit. Nam lobortis, est nec elementum mattis, eros
-            enim tristique augue, nec ornare dui turpis sit amet tortor.
-          </p>
-          <img
-            src="https://images.unsplash.com/photo-1676924535494-d76f838f4369?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
-          />
-          <p>
-            Nunc a metus urna. Vivamus elit purus, fermentum eget velit vitae,
-            imperdiet posuere risus. Proin non congue risus. Nam vel
-            sollicitudin erat. Praesent vulputate orci non libero consequat
-            bibendum. Nunc sed nisi ac lorem elementum venenatis. Proin vitae
-            libero non ligula accumsan aliquet id ut tortor. Etiam ac augue
-            facilisis, elementum magna ac, pellentesque nunc. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus. Duis velit lacus,
-            elementum a neque sed, laoreet faucibus nulla.
-          </p>
-        </div>
+        <div class="popup-article"></div>
       </div>
     </div>
 
@@ -71,23 +40,22 @@
         <div class="card-list job-list">
           <article class="job delay hidden">
             <div>
-              <h3>Newronika</h3>
-              <p>UI Designer• Part Time</p>
+              <h3>Nuvyta S.r.l.</h3>
+              <p>UX/UI Designer • Full Time</p>
             </div>
-            <p>Aug 2022 - Sep 2022</p>
+            <p>Apr 2020 - Present</p>
           </article>
-
           <article class="job delay hidden">
             <div>
-              <h3>Newronika</h3>
-              <p>UI Designer• Part Time</p>
+              <h3>Newronika S.p.A.</h3>
+              <p>UI Designer • Part Time</p>
             </div>
             <p>Aug 2022 - Sep 2022</p>
           </article>
         </div>
 
         <div class="year-counter delay hidden">
-          <h1>3</h1>
+          <h1>2</h1>
           <p>
             Years of experience,<br />
             and counting!
@@ -99,7 +67,12 @@
     <section class="certificates dot-background wrapper">
       <h2 class="hidden">Certificates</h2>
       <div class="card-list card-grid">
-        <article class="certificate card-style hidden">
+        <a
+          class="certificate card-style hidden"
+          href="https://www.interaction-design.org/members/miguel-sosa/certificate/course/01cf7e87-9788-499a-bbc6-717c74d2cd99?certificateType=course"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div>
             <div>
               <h3>Mobile User Experience Design</h3>
@@ -108,47 +81,58 @@
             <p class="caption">Issued Jan 2021</p>
           </div>
           <img src="img/external-link.svg" />
-        </article>
-        <article class="certificate card-style hidden">
+        </a>
+        <a
+          class="certificate card-style hidden"
+          href="ux-treehouse.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div>
             <div>
-              <h3>Mobile User Experience Design</h3>
-              <p>Interaction Design Foundation</p>
+              <h3>User Experience Design</h3>
+              <p>Treehouse</p>
             </div>
-            <p class="caption">Issued Jan 2021</p>
+            <p class="caption">Issued Dec 2019</p>
           </div>
           <img src="img/external-link.svg" />
-        </article>
-        <article class="certificate card-style hidden">
-          <div>
-            <div>
-              <h3>Mobile User Experience Design</h3>
-              <p>Interaction Design Foundation</p>
-            </div>
-            <p class="caption">Issued Jan 2021</p>
-          </div>
-          <img src="img/external-link.svg" />
-        </article>
+        </a>
       </div>
     </section>
 
     <footer id="main-footer">
       <div>
         <h3>Interested in talking?</h3>
-        <button class="card-style" id="email-cta">
-          <img src="img/mail.svg" />Send me an email
-        </button>
-      </div>
-      <span class="caption"
-        >Brain on the cover:
         <a
+          href="mailto:msosadesign@gmail.com"
           target="_blank"
-          class="caption"
-          href="https://www.freepik.com/free-vector/brain-cartoon-vector-icon-illustration-education-object-icon-concept-isolated-premium-vector-flat-cartoon-style_17562640.htm#page=2&query=smart&position=10&from_view=search&track=sph"
-          >Image by catalyststuff</a
+          rel="noopener noreferrer"
+          ><button class="card-style" id="email-cta">
+            <img src="img/mail.svg" />Send me an email
+          </button>
+        </a>
+      </div>
+      <div>
+        <span class="caption"
+          >Brain on the cover:
+          <a
+            target="_blank"
+            class="caption"
+            href="https://www.freepik.com/free-vector/brain-cartoon-vector-icon-illustration-education-object-icon-concept-isolated-premium-vector-flat-cartoon-style_17562640.htm#page=2&query=smart&position=10&from_view=search&track=sph"
+            >Image by catalyststuff</a
+          >
+          on Freepik</span
         >
-        on Freepik</span
-      >
+        <span class="caption"
+          >Feather Icons:
+          <a
+            href="https://github.com/feathericons/feather/blob/master/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            >License
+          </a></span
+        >
+      </div>
     </footer>
   </body>
 </html>

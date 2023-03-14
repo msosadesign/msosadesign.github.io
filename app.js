@@ -14,7 +14,7 @@ getJSON("projects.json").then((json) => {
     const projectCard = document.createElement("article");
     projectCard.innerHTML = `
           <img
-            src="https://images.unsplash.com/photo-1676924535494-d76f838f4369?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            src="${project.cover}"
           />
           <div>
             <h3>${project.name}</h3>
@@ -59,8 +59,8 @@ getJSON("projects.json").then((projects) => {
 
     // Event Listener
     el.addEventListener("click", () => {
-      console.log(projects[i]);
       modal.classList.add("show-modal");
+      document.getElementById('article-header').style.backgroundImage=`linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url(${projects[i].cover})`
       document.getElementById("article-title").textContent = `${projects[i].name}`;
       document.getElementsByClassName(
         "popup-article"
@@ -68,3 +68,13 @@ getJSON("projects.json").then((projects) => {
     });
   }
 });
+
+document.getElementById("close-modal").addEventListener("click",()=> {
+  modal.classList.remove("show-modal");
+})
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.classList.remove("show-modal");
+  }
+}

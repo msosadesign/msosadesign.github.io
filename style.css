@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@400;500&display=swap&");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;500&display=swap');
 
 :root {
   --primary-color: #9d47c6;
@@ -63,7 +63,7 @@ footer button {
   transition: border 200ms, box-shadow 200ms;
 }
 
-p {
+p, li{
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
@@ -311,6 +311,7 @@ body {
 .certificate {
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .certificate > div {
@@ -341,6 +342,10 @@ body {
 
 #main-footer > div {
   gap: 24px;
+}
+
+#main-footer a {
+  text-decoration: none;
 }
 
 #email-cta {
@@ -397,6 +402,14 @@ body {
   flex-direction: column;
 }
 
+.popup-article strong {
+  font-weight: 500;
+}
+
+.popup-article p {
+  font-weight: 300;
+}
+
 .modal-content header {
   width: 100%;
   display: flex;
@@ -409,6 +422,7 @@ body {
   color: var(--on-bg-high-emphasis);
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url("https://images.unsplash.com/photo-1676924535494-d76f838f4369?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
   background-size: cover;
+  background-position: center;
 }
 
 .modal-content header h2 {
@@ -424,9 +438,9 @@ body {
   transition: border 200ms, box-shadow 200ms;
 
   width: 40px;
-  position: fixed;
+  /* position: fixed;
   bottom: 24px;
-  left: 24px;
+  left: 24px; */
 }
 
 #close-modal:hover, #close-modal:focus {

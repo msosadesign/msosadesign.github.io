@@ -65,6 +65,7 @@ getJSON("projects.json").then((projects) => {
       document.getElementsByClassName(
         "popup-article"
       )[0].innerHTML = `${projects[i].article}`;
+      modal.scrollTop = 0;
     });
   }
 });
@@ -75,6 +76,7 @@ document.getElementById("close-modal").addEventListener("click",()=> {
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.classList.remove("show-modal");
+  document.getElementById('article-title').classList.remove("show");
+  modal.classList.remove("show-modal");
   }
 }

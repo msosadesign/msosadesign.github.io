@@ -515,7 +515,7 @@ body {
 @media only screen and (min-width: 905px) {
   #main-header {
     justify-content: center;
-    gap: 224px;
+    gap: 219px;
   }
 
   .jobs,
@@ -575,7 +575,7 @@ body {
 @media only screen and (min-width: 1440px) {
   #main-header {
     justify-content: center;
-    gap: 435px;
+    gap: 418px;
   }
 
   .jobs,

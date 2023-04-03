@@ -15,6 +15,7 @@ getJSON("projects.json").then((json) => {
     projectCard.innerHTML = `
           <img
             src="${project.cover}"
+            alt="${project.name} cover"
           />
           <div>
             <h3>${project.name}</h3>

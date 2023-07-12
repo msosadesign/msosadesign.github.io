@@ -64,6 +64,7 @@ footer button, cta-button {
   transition: border 200ms, box-shadow 200ms;
 }
 
+.main-nav a,
 p,
 li {
   font-family: var(--font-family);
@@ -139,6 +140,7 @@ body {
   width: 328px;
 }
 
+
 #main-header-content > div {
   display: flex;
   flex-direction: column;
@@ -149,6 +151,23 @@ body {
 
 #main-header-content span {
   color: var(--primary-color-texts);
+}
+
+.main-nav {
+  background: var(--bg-reverse-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  padding: 16px;
+}
+
+.main-nav a {
+  color: var(--on-bg-high-emphasis);
+  list-style:  none;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
 }
 
 .delay:nth-child(1) {

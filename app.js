@@ -61,7 +61,7 @@ getJSON("projects.json").then((projects) => {
     // Event Listener
     el.addEventListener("click", () => {
       modal.classList.add("show-modal");
-      document.getElementById('article-header').style.backgroundImage=`linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url(${projects[i].cover})`
+      document.getElementById('article-header').style.backgroundImage=`linear-gradient(to bottom, rgba(245, 246, 252, 0), rgba(0, 0, 0, 0.73)), url(${projects[i].cover})`;
       document.getElementById("article-title").textContent = `${projects[i].name}`;
       document.getElementsByClassName(
         "popup-article"
@@ -73,11 +73,11 @@ getJSON("projects.json").then((projects) => {
 
 document.getElementById("close-modal").addEventListener("click",()=> {
   modal.classList.remove("show-modal");
-})
+});
 
 window.onclick = function(event) {
   if (event.target == modal) {
   document.getElementById('article-title').classList.remove("show");
   modal.classList.remove("show-modal");
   }
-}
+};

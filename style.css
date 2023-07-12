@@ -50,7 +50,8 @@ h2 {
 }
 
 h3,
-button {
+button,
+.cta-button {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 500;
@@ -59,7 +60,7 @@ button {
   margin: 0;
 }
 
-footer button {
+footer button, cta-button {
   transition: border 200ms, box-shadow 200ms;
 }
 
@@ -355,7 +356,7 @@ body {
   text-decoration: none;
 }
 
-#email-cta {
+.cta-button {
   display: flex;
   align-items: flex-start;
   padding: 16px 24px;

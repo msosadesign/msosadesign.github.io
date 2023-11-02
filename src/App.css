@@ -93,7 +93,7 @@ body {
   color: var(--on-bg-high-emphasis);
 }
 
-.hidden {
+.hiddenn {
   opacity: 0;
   transform: translateY(-50%);
   filter: blur(5px);

@@ -1,3 +1,6 @@
+import externalIcon from "../img/home-img/external-link.svg"
+
+
 export default function Certificate(props) {
     return (
         <a
@@ -13,7 +16,7 @@ export default function Certificate(props) {
                 </div>
                 <p class="caption">Issued {props.date}</p>
             </div>
-            <img alt="External link icon" src="img/external-link.svg" />
+            <img alt="External link icon" src={externalIcon} />
         </a>
     )
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import SocialButton from "./SocialButton";
+import emailIcon from "../img/home-img/mail.svg";
+import githubIcon from "../img/home-img/github.svg";
+import linkedinIcon from "../img/home-img/linkedin.svg";
 
 class Footer extends React.Component {
     render() {
@@ -7,8 +10,9 @@ class Footer extends React.Component {
             <footer id="main-footer">
                 <div>
                     <h3>Interested in talking?</h3>
-                    <SocialButton href="mailto:msosadesign@gmail.com" label="Send me an email" iconsrc="img/mail.svg" />
-                    <SocialButton href="https://www.linkedin.com/in/msosadesign" label="Connect on LinkedIn" iconsrc="./img/linkedin.svg" />
+                    <SocialButton href="mailto:msosadesign@gmail.com" label="Send me an email" iconsrc={emailIcon} />
+                    <SocialButton href="https://github.com/msosadesign" label="GitHub" iconsrc={githubIcon} />
+                    <SocialButton href="https://www.linkedin.com/in/msosadesign" label="LinkedIn" iconsrc={linkedinIcon} />
                 </div>
                 <div>
                     <span class="caption"

@@ -1,5 +1,5 @@
-import externalIcon from "../img/home-img/external-link.svg"
-
+import externalIcon from "../../img/home-img/external-link.svg"
+import "./Certificate.css"
 
 export default function Certificate(props) {
     return (

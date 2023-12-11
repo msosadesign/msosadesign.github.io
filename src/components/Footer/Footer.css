@@ -1,0 +1,38 @@
+#main-footer,
+#main-footer>div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#main-footer {
+  padding: 56px 0 40px 0;
+  gap: 64px;
+}
+
+#main-footer>div {
+  gap: 24px;
+}
+
+#main-footer a {
+  text-decoration: none;
+}
+
+.social-container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+footer button,
+cta-button {
+  transition: border 200ms, box-shadow 200ms;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .social-container>div {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,25 @@
+.certificate {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.certificate>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+}
+
+.certificate>img {
+    padding: 0 8px;
+    width: 56px;
+}
+
+@media only screen and (min-width: 905px) {
+    .certificate>img {
+        padding: 0 16px;
+    }
+}

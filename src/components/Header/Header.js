@@ -1,5 +1,5 @@
 import React from "react";
-import brain from "../img/home-img/brain.svg";
+import brain from "../../img/home-img/brain.svg";
 
 class Header extends React.Component {
   render() {

@@ -1,4 +1,4 @@
-function Job(props) {
+export default function Job(props) {
     return (
         <article class="job delay hidden">
             <div>
@@ -9,5 +9,3 @@ function Job(props) {
         </article>
     )
 }
-
-export default Job;

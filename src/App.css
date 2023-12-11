@@ -60,10 +60,6 @@ button,
   margin: 0;
 }
 
-footer button, cta-button {
-  transition: border 200ms, box-shadow 200ms;
-}
-
 .main-nav a,
 p,
 li {
@@ -93,7 +89,7 @@ body {
   color: var(--on-bg-high-emphasis);
 }
 
-.hiddenn {
+.hidden0 {
   opacity: 0;
   transform: translateY(-50%);
   filter: blur(5px);
@@ -125,7 +121,7 @@ body {
   padding: 56px 16px;
 
   background-size: var(--dot-spacing) var(--dot-spacing), cover;
-  
+
   display: flex;
   align-items: center;
   justify-content: center
@@ -141,7 +137,7 @@ body {
 }
 
 
-#main-header-content > div {
+#main-header-content>div {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -164,7 +160,7 @@ body {
 
 .main-nav a {
   color: var(--on-bg-high-emphasis);
-  list-style:  none;
+  list-style: none;
   display: inline;
   text-align: center;
   text-decoration: none;
@@ -230,15 +226,22 @@ body {
   transition: opacity 1s ease 400ms, transform 1s ease 400ms,
     filter 1s ease 400ms, border 200ms, box-shadow 200ms,
     grid-template-rows 300ms, border 200ms, box-shadow 200ms;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left; */
 }
 
 .project:hover {
   grid-template-rows: 83px min-content;
+}
+
+.projects-page {
+  --dot-color: rgba(73, 46, 86, 0.5);
+  --dot-size: 4px;
+  --dot-spacing: 18px;
+  background: radial-gradient(circle at var(--dot-size) var(--dot-size),
+      var(--dot-color) var(--dot-size),
+      transparent 0),
+      linear-gradient(180deg, #333 0%, #492E56 47.92%, #333 100%);
+ 
+  background-size: var(--dot-spacing) var(--dot-spacing), cover;
 }
 
 .wrapper {
@@ -334,46 +337,8 @@ body {
   gap: 24px;
 }
 
-.certificate {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-}
 
-.certificate>div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 16px;
-  gap: 8px;
-  width: 100%;
-}
 
-.certificate>img {
-  padding: 0 8px;
-  width: 56px;
-}
-
-#main-footer,
-#main-footer>div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#main-footer {
-  padding: 56px 0 40px 0;
-  gap: 64px;
-}
-
-#main-footer>div {
-  gap: 24px;
-}
-
-#main-footer a {
-  text-decoration: none;
-}
 
 .cta-button {
   display: flex;
@@ -581,9 +546,7 @@ body {
     align-self: auto;
   }
 
-  .certificate>img {
-    padding: 0 16px;
-  }
+  
 }
 
 @media only screen and (min-width: 1240px) {

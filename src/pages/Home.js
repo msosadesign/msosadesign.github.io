@@ -1,6 +1,8 @@
 import React from "react";
-import Certificate from "../components/Certificate";
-import Job from "../components/Job";
+import Certificate from "../components/Certificate/Certificate";
+import Job from "../components/Job/Job";
+import ProjectDisplay from "../components/ProjectDisplay/ProjectDisplay";
+import ProjectList from "../components/ProjectList/ProjectList";
 
 class Home extends React.Component {
     render() {
@@ -8,7 +10,10 @@ class Home extends React.Component {
             <main>
                 <section id="projects" class="dot-background wrapper">
                     <h2 class="hidden">Notable Projects</h2>
-                    <div id="project-grid" class="card-list card-grid"></div>
+                    <div id="project-grid" class="card-list card-grid">
+                        <ProjectDisplay cover="https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png" name="El gato" description="El gato salto y dio 3 vueltas en el aire" />
+                        <ProjectList />
+                    </div>
                 </section>
 
                 <div id="myModal" class="modal">

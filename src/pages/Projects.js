@@ -1,3 +1,4 @@
+import Chip from "../components/Chip/Chip";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectList from "../components/ProjectList/ProjectList";
 
@@ -7,6 +8,8 @@ export default function Projects() {
       <Navigation />
       <h1>Here are some of my projects</h1>
       <p>Filter by UI Design or Frontend!</p>
+      <Chip label="UI Design" />
+      <Chip label="Frontend Development" />
       <ProjectList />
       <h2>Prototype of a weather app</h2>
       <p>

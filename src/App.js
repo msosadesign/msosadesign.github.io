@@ -7,8 +7,8 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
+      {/* <Header />
+      <Home /> */}
       <Projects />
       <Footer />
     </div>

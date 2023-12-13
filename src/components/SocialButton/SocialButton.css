@@ -1,0 +1,6 @@
+.cta-button {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 24px;
+    gap: 16px;
+}

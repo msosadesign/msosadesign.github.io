@@ -1,3 +1,5 @@
+import "./Job.css"
+
 export default function Job(props) {
     return (
         <article class="job delay hidden">

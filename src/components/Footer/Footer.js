@@ -18,16 +18,16 @@ class Footer extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <span class="caption"
+                    <span className="caption"
                     >Brain on the cover:
                         <a
                             target="_blank"
-                            class="caption"
+                            className="caption"
                             rel="noopener noreferrer"
                             href="https://www.freepik.com/free-vector/brain-cartoon-vector-icon-illustration-education-object-icon-concept-isolated-premium-vector-flat-cartoon-style_17562640.htm#page=2&query=smart&position=10&from_view=search&track=sph"
                         > Image by catalyststuff </a>
                         on Freepik</span>
-                    <span class="caption">Feather Icons:
+                    <span className="caption">Feather Icons:
                         <a
                             href="https://github.com/feathericons/feather/blob/master/LICENSE"
                             target="_blank"

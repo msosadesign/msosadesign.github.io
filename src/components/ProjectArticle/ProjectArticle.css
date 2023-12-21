@@ -1,0 +1,50 @@
+.project-article h2 {
+    margin-bottom: 24px;
+}
+
+.project-article {
+    display: flex;
+    gap: 32px;
+    /* padding: 16px; */
+    flex-direction: column;
+}
+
+.project-article strong {
+    font-weight: 500;
+}
+
+.project-article p {
+    font-weight: 300;
+}
+
+.project-article img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 624px) {
+    .project-article {
+        width: 536px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 905px) {
+    .project-article {
+        width: 552px;
+    }
+}
+
+@media only screen and (min-width: 1240px) {
+    .project-article {
+        width: auto;
+        flex-grow: 8;
+        flex-basis: 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .project-article {
+        width: 684px;
+        flex: auto;
+    }
+}

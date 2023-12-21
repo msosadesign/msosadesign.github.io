@@ -7,7 +7,7 @@ export default function ProjectChip(props) {
         src={props.cover}
         alt={`${props.name} cover`}
       />
-      <div>{props.name} App</div>
+      <p className="small-caption">{props.name}</p>
     </div>
   );
 }

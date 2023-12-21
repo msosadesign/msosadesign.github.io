@@ -6,7 +6,7 @@ function SocialButton(props) {
       href={props.href}
       target="_blank"
       rel="noopener noreferrer"
-      class="cta-button card-style hidden show"
+      className="cta-button card-style hidden show"
     >
       <img alt="Icon" src={props.iconsrc} />
       {props.label}

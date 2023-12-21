@@ -7,11 +7,12 @@
     border: 1px rgba(255, 255, 255, 0.07) solid;
     justify-content: flex-start;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
     display: inline-flex;
 
-    flex: 1 0 calc(50% - 16px); /* 50% width with a fixed margin of 16px between items */
-    margin: 4px 8px; /* Fixed margin between elements */
+    flex: 1 0 calc(50% - 16px);
+    /* 50% width with a fixed margin of 16px between items */
+    /* margin: 4px 8px; Fixed margin between elements */
 }
 
 .project-chip>img {
@@ -20,7 +21,23 @@
     height: 40px;
 }
 
-.project-chip>div {
+@media only screen and (min-width: 768px) {
+    .project-chip {
+        flex: 1 0 calc(25% - 24px);
+        /* 50% width with a fixed margin of 16px between items */
+
+    }
+}
+
+@media only screen and (min-width: 905px) {
+    .project-chip {
+        width: 100%;
+        flex: auto;
+    }
+}
+
+
+/* .project-chip>div {
     flex: 1 1 0;
     color: white;
     font-size: 12px;
@@ -28,4 +45,4 @@
     font-weight: 400;
     letter-spacing: 0.40px;
     word-wrap: break-word
-}
+} */

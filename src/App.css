@@ -60,9 +60,10 @@ button,
   margin: 0;
 }
 
-.main-nav a,
+/* .main-nav a, */
 p,
-li {
+li,
+.body-2 {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
@@ -83,6 +84,21 @@ a {
   line-height: 17px;
   margin: 0;
 }
+
+.small-caption {
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.4px;
+}
+
+/* @media only screen and (min-width: 768px) {
+  .small-caption {
+    font-size: 16px;
+  }
+} */
 
 body {
   background: var(--bg-dark);
@@ -149,7 +165,76 @@ body {
   color: var(--primary-color-texts);
 }
 
-.main-nav {
+/* -------------------- Projects Page -------------------- */
+
+.projects-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 276px;
+}
+
+.projects-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media only screen and (min-width: 624px) {
+  .projects-header {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 905px) {
+  .projects-header {
+    width: 840px;
+  }
+
+  .projects-content {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .projects-sidebar {
+    width: 264px;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .projects-sidebar {
+    width: auto;
+    flex-grow: 4;
+    flex-basis: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projects-sidebar {
+      width: 332px;
+      flex: auto;
+  }
+
+  .projects-content {
+    gap: 32px;
+    flex-direction: row;
+  }
+  
+  .projects-header {
+    width: 1040px;
+  }
+}
+
+/* ----------------- End of Projects Page ----------------- */
+
+
+/* .main-nav {
   background: var(--bg-reverse-gradient);
   display: flex;
   justify-content: center;
@@ -164,7 +249,7 @@ body {
   display: inline;
   text-align: center;
   text-decoration: none;
-}
+} */
 
 .delay:nth-child(1) {
   transition-delay: 200ms;
@@ -239,9 +324,14 @@ body {
   background: radial-gradient(circle at var(--dot-size) var(--dot-size),
       var(--dot-color) var(--dot-size),
       transparent 0),
-      linear-gradient(180deg, #333 0%, #492E56 47.92%, #333 100%);
- 
+    linear-gradient(180deg, #333 0%, #492E56 47.92%, #333 100%);
+
   background-size: var(--dot-spacing) var(--dot-spacing), cover;
+}
+
+.project-filters {
+  display: flex;
+  gap: 8px;
 }
 
 .wrapper {
@@ -369,25 +459,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px;
 }
 
-.popup-article img {
-  width: 100%;
-}
-
-.popup-article {
-  display: flex;
-  gap: 32px;
-  padding: 16px;
-  flex-direction: column;
-}
-
-.popup-article strong {
-  font-weight: 500;
-}
-
-.popup-article p {
-  font-weight: 300;
-}
-
 .modal-content header {
   width: 100%;
   display: flex;
@@ -497,7 +568,7 @@ body {
   }
 
   .jobs,
-  .wrapper h2,
+  .section-title,
   .card-list {
     width: 833px;
   }
@@ -519,7 +590,7 @@ body {
     align-self: auto;
   }
 
-  
+
 }
 
 @media only screen and (min-width: 1240px) {
@@ -537,7 +608,7 @@ body {
     width: 32px;
   }
 
-  .wrapper h2 {
+  .section-title {
     width: auto;
   }
 
@@ -559,7 +630,7 @@ body {
   }
 
   .jobs,
-  .wrapper h2,
+  .section-title,
   .card-list {
     width: 1024px;
   }

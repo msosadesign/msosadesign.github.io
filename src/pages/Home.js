@@ -9,7 +9,7 @@ class Home extends React.Component {
         return (
             <main>
                 <section id="projects" class="dot-background wrapper">
-                    <h2 class="hidden">Notable Projects</h2>
+                    <h2 class="hidden section-title">Notable Projects</h2>
                     <div id="project-grid" class="card-list card-grid">
                         <ProjectDisplay cover="https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png" name="El gato" description="El gato salto y dio 3 vueltas en el aire" />
                         <ProjectList />
@@ -28,7 +28,7 @@ class Home extends React.Component {
                 </div>
 
                 <section id="job-experience" class="job-experience wrapper">
-                    <h2 class="hidden">Job Experience</h2>
+                    <h2 class="hidden section-title">Job Experience</h2>
                     <div class="jobs">
                         <div class="card-list job-list">
                             <Job company="Nuvyta S.r.l." role="UX/UI Designer" schedule="Full Time" period="May 2020 - Present"/>
@@ -45,7 +45,7 @@ class Home extends React.Component {
                 </section>
 
                 <section id="certificates" class="certificates dot-background wrapper">
-                    <h2 class="hidden">Certificates</h2>
+                    <h2 class="hidden section-title">Certificates</h2>
                     <div class="card-list card-grid">
                         <Certificate title="Front End Web Development" school="Treehouse" date="Jul 2023" href="https://www.credential.net/77644835" />
                         <Certificate title="Mobile User Experience Design" school="Interaction Design Foundation" date="Jan 2021" href="https://www.interaction-design.org/members/miguel-sosa/certificate/course/01cf7e87-9788-499a-bbc6-717c74d2cd99?certificateType=course" />

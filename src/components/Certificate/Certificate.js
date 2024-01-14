@@ -4,7 +4,7 @@ import "./Certificate.css"
 export default function Certificate(props) {
     return (
         <a
-            class="certificate card-style hidden"
+            className="certificate card-style hidden"
             href={props.href}
             target="_blank"
             rel="noopener noreferrer"
@@ -14,7 +14,7 @@ export default function Certificate(props) {
                     <h3>{props.title}</h3>
                     <p>{props.school}</p>
                 </div>
-                <p class="caption">Issued {props.date}</p>
+                <p className="caption">Issued {props.date}</p>
             </div>
             <img alt="External link icon" src={externalIcon} />
         </a>

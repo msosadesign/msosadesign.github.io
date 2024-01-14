@@ -1,12 +1,14 @@
 import React from "react";
 import brain from "../../img/home-img/brain.svg";
+import Navigation from "../Navigation/Navigation";
 
 class Header extends React.Component {
   render() {
     return (
       <header id="main-header">
+        <Navigation />
         <div id="main-header-content">
-          <div class="hidden">
+          <div className="hidden">
             <h1>
               Hello.
               <br />
@@ -22,7 +24,7 @@ class Header extends React.Component {
               My hobbies include the gym, cooking, and video games.
             </p>
           </div>
-          <img class="hidden" src={brain} alt="Brain drawing" />
+          <img className="hidden" src={brain} alt="Brain drawing" />
         </div>
       </header>
     );

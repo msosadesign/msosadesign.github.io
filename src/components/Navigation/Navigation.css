@@ -10,6 +10,17 @@
 }
 
 .navigation-button {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+
+    display: block;
+    height: 40px;
     color: var(--on-bg-high-emphasis);
     width: 124px;
     background-color: transparent;
@@ -19,3 +30,19 @@
     border-radius: 0;
     appearance: none;
 }
+
+.navigation-active {
+    color: var(--primary-color-texts);
+}
+
+.navigation-active::after {
+    content: "";
+    position: relative;
+    bottom: -8px; /* Adjust this value to control the distance between text and underline */
+    left: 0;
+    width: 124px; /* Set the width of the underline to 124px */
+    height: 4px; /* Adjust this value to control the thickness of the underline */
+    background-color: var(--primary-color-texts); /* Adjust this value to set the color of the underline */
+    border-radius: 5px; /* Adjust this value to control the rounded endpoints */
+    display: block;
+  }

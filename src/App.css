@@ -139,6 +139,8 @@ body {
   background-size: var(--dot-spacing) var(--dot-spacing), cover;
 
   display: flex;
+  flex-direction: column;
+  gap: 40px;
   align-items: center;
   justify-content: center
 }
@@ -526,6 +528,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-grow: 1;
+    width: auto;
   }
 
   .year-counter {

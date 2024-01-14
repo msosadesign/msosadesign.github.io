@@ -7,7 +7,7 @@ export default function ProjectDisplay(props) {
           />
           <div>
             <h3>{props.name}</h3>
-            <p class="caption">{props.description}</p>
+            <p className="caption">{props.description}</p>
           </div>
         </article>
     )

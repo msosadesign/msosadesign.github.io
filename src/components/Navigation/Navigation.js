@@ -14,7 +14,7 @@ export default function Navigation() {
         Home
       </NavLink>
       <NavLink
-        to="/projects"
+        to="/projects/1"
         className={({ isActive }) =>
           isActive ? "navigation-button navigation-active" : "navigation-button"
         }

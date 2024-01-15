@@ -1,3 +1,4 @@
+import { Outlet, Route, Routes } from "react-router-dom";
 import Chip from "../components/Chip/Chip";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectArticle from "../components/ProjectArticle/ProjectArticle";
@@ -19,7 +20,9 @@ export default function Projects() {
           </div>
           <ProjectList />
         </div>
-        <ProjectArticle />
+        <Outlet />
+        {/* <ProjectArticle href="https://raw.githubusercontent.com/msosadesign/treehouse-project-6/master/README.md" /> */}
+
       </div>
     </main>
   );

@@ -1,10 +1,12 @@
 .project-chip {
+    text-decoration: none;
+    color: var(--on-bg-high-emphasis);
     width: 156px;
     height: 40px;
     background: rgba(255, 255, 255, 0.07);
     border-radius: 8px;
     overflow: hidden;
-    border: 1px rgba(255, 255, 255, 0.07) solid;
+    border: 2px rgba(255, 255, 255, 0.07) solid;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
@@ -19,6 +21,10 @@
     object-fit: cover;
     width: 40px;
     height: 40px;
+}
+
+.project-chip-selected {
+    background: rgba(157, 71, 198, 0.52);
 }
 
 @media only screen and (min-width: 768px) {

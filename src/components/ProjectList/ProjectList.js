@@ -1,26 +1,13 @@
-import { Link } from "react-router-dom";
 import ProjectChip from "../ProjectChip/ProjectChip";
 import "./ProjectList.css";
+import projects from "../../projects.json";
 
-export default function ProjectList() {
+export default function ProjectList(data) {
   return (
     <div className="project-list">
-      <ProjectChip
-        cover="https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png"
-        name="Prototype of a Weather"
-      />
-      <ProjectChip
-        cover="https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png"
-        name="Sunshine Explorer"
-      />
-      <ProjectChip
-        cover="https://nupec.com/wp-content/uploads/2021/02/Captura-de-pantalla-2021-02-08-a-las-13.59.48.png"
-        name="Weather Wizardry"
-      />
-      {/* <Link to={"/projects"}>Projects</Link> */}
-      <Link to={"/projects/1"}>Project 1</Link>
-      <Link to={"/projects/2"}>Project 2</Link>
-      <Link to={"/projects/3"}>Project 3</Link>
+       {projects.map((project) => (
+        <ProjectChip to={project.id} key={project.id} cover={project.cover} name={project.name} />
+      ))}
     </div>
   );
 }

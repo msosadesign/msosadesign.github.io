@@ -1,0 +1,23 @@
+[
+  {
+    "id": "webapp-dashboard",
+    "name": "WebApp Dashboard",
+    "cover": "https://user-images.githubusercontent.com/59977013/253012806-542d74ce-8197-46ac-a14d-297b7d8be7db.png",
+    "description": "Dashboard based website created using css grids and flexbox, mostly written in HTML/CSS with some interactions on JS and implementing charts.js for the widgets.",
+    "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-7/master/README.md"
+  },
+  {
+    "id": "awesome-startup-directory",
+    "name": "Awesome Startup Directory",
+    "cover": "https://user-images.githubusercontent.com/59977013/243427399-200d38ae-11bd-4969-b879-51a2ee6b5590.png",
+    "description": "An employee directory that focuses on fetching data from an API and showing it asynchronously in a webpage. There's also some JS array iteration methods used in the project.",
+    "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-8/main/readme.md"
+  },
+  {
+    "id": "wheel-of-success",
+    "name": "Wheel of Success",
+    "cover": "https://user-images.githubusercontent.com/59977013/253069588-e4be5ea2-b6a5-4b4b-bd24-72f03b6ab4b1.png",
+    "description": "A minigame where you have to choose letters to guess the hidden sentence. It uses Javascript DOM manipulation to add and remove classes as the user selects letters from the keyboard.",
+    "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-6/master/README.md"
+  }
+]

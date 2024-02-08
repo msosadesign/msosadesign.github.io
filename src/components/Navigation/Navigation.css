@@ -31,11 +31,11 @@
     appearance: none;
 }
 
-.navigation-active {
+.active {
     color: var(--primary-color-texts);
 }
 
-.navigation-active::after {
+.active::after {
     content: "";
     position: relative;
     bottom: -8px; /* Adjust this value to control the distance between text and underline */

@@ -27,9 +27,15 @@
     background: rgba(157, 71, 198, 0.52);
 }
 
+.project-chip .small-caption {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 @media only screen and (min-width: 768px) {
     .project-chip {
-        flex: 1 0 calc(25% - 24px);
+        flex: 1 0 calc(33.3% - 24px);
         /* 50% width with a fixed margin of 16px between items */
 
     }

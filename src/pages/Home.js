@@ -4,6 +4,7 @@ import Job from "../components/Job/Job";
 import ProjectDisplay from "../components/ProjectDisplay/ProjectDisplay";
 import Header from "../components/Header/Header";
 import projects from "../projects.json";
+import Footer from "../components/Footer/Footer";
 
 class Home extends React.Component {
   render() {
@@ -14,23 +15,10 @@ class Home extends React.Component {
           <h2 className="hidden section-title">Notable Projects</h2>
           <div id="project-grid" className="card-list card-grid">
             {projects.map((item) => (
-              <ProjectDisplay key={item.id} cover={item.cover} name={item.name} description={item.description} />
+              <ProjectDisplay to={`projects/${item.id}`} key={item.id} cover={item.cover} name={item.name} description={item.description} />
             ))}
           </div>
         </section>
-
-        <div id="myModal" className="modal">
-          {/* Modal content */}
-          <div className="modal-content">
-            <header id="article-header">
-              <img id="close-modal" src="img/x.svg" alt="close icon" />
-              <h2 id="article-title" className="hidden">
-                Prototype of a weather app
-              </h2>
-            </header>
-            <div className="popup-article"></div>
-          </div>
-        </div>
 
         <section id="job-experience" className="job-experience wrapper">
           <h2 className="hidden section-title">Job Experience</h2>
@@ -86,6 +74,7 @@ class Home extends React.Component {
             />
           </div>
         </section>
+        <Footer />
       </main>
     );
   }

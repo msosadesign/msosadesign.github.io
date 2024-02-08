@@ -1,7 +1,8 @@
-import { Outlet } from "react-router-dom";
+import { Navigate, Outlet } from "react-router-dom";
 // import Chip from "../components/Chip/Chip";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectList from "../components/ProjectList/ProjectList";
+import Footer from "../components/Footer/Footer";
 
 export default function Projects() {
   return (
@@ -21,6 +22,7 @@ export default function Projects() {
         </div>
         <Outlet />
       </div>
+      <Footer />
     </main>
   );
 }

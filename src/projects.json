@@ -19,5 +19,26 @@
     "cover": "https://user-images.githubusercontent.com/59977013/253069588-e4be5ea2-b6a5-4b4b-bd24-72f03b6ab4b1.png",
     "description": "A minigame where you have to choose letters to guess the hidden sentence. It uses Javascript DOM manipulation to add and remove classes as the user selects letters from the keyboard.",
     "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-6/master/README.md"
+  },
+  {
+    "id": "newsletter-sign-up-form",
+    "name": "Newsletter Sign-Up Form",
+    "cover": "https://user-images.githubusercontent.com/59977013/253029771-3cfec2f1-a6f5-4b4a-a748-cd13f3fb87f0.png",
+    "description": "Mock website with the purpose of testing all the components, colors and fonts of the project. It uses SCSS as syntax and takes advantage of most sass functionalities.",
+    "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-3/master/README.md"
+  },
+  {
+    "id": "focus-timer",
+    "name": "Focus Timer",
+    "cover": "https://user-images.githubusercontent.com/59977013/253035065-cadb9525-e6b1-427c-91bc-99f1f826a4cd.png",
+    "description": "Timer with a focus on productivity, based on the pomodoro technique and tweaked for a different user experience. It's designed to discourage from any unnecessary distractions.",
+    "article": "https://raw.githubusercontent.com/msosadesign/focus-timer/main/README.md"
+  },
+  {
+    "id": "circles-ui-kit",
+    "name": "Circles UI Kit",
+    "cover": "https://user-images.githubusercontent.com/59977013/253059842-30c80de6-3820-4719-a04f-08fbb4cef90e.png",
+    "description": "Mock website with the purpose of testing all the components, colors and fonts of the project. It uses SCSS as syntax and takes advantage of most sass functionalities.",
+    "article": "https://raw.githubusercontent.com/msosadesign/treehouse-project-4/master/README.md"
   }
 ]

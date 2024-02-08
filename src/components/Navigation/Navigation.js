@@ -1,23 +1,19 @@
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
-// import NavigationButton from "./NavigationButton";
+import projects from "../../projects.json"
 
 export default function Navigation() {
   return (
     <nav className="main-nav">
       <NavLink
         to="/"
-        className={({ isActive }) =>
-          isActive ? "navigation-button navigation-active" : "navigation-button"
-        }
+        className={"navigation-button"}
       >
         Home
       </NavLink>
       <NavLink
-        to="/projects/"
-        className={({ isActive }) =>
-          isActive ? "navigation-button navigation-active" : "navigation-button"
-        }
+        to={`/projects`}
+        className={"navigation-button"}
       >
         Projects
       </NavLink>

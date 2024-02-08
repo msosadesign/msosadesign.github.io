@@ -1,5 +1,6 @@
 import React from "react";
 import brain from "../../img/home-img/brain.svg";
+import pfp from "../../img/home-img/pfp.png";
 import Navigation from "../Navigation/Navigation";
 
 class Header extends React.Component {
@@ -24,7 +25,7 @@ class Header extends React.Component {
               My hobbies include the gym, cooking, and video games.
             </p>
           </div>
-          <img className="hidden" src={brain} alt="Brain drawing" />
+          <img className="hidden" src={pfp} alt="Brain drawing" />
         </div>
       </header>
     );

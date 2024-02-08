@@ -2,7 +2,7 @@ import ProjectChip from "../ProjectChip/ProjectChip";
 import "./ProjectList.css";
 import projects from "../../projects.json";
 
-export default function ProjectList(data) {
+export default function ProjectList() {
   return (
     <div className="project-list">
        {projects.map((project) => (
@@ -11,3 +11,4 @@ export default function ProjectList(data) {
     </div>
   );
 }
+

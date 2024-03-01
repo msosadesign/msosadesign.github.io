@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
-import projects from "../../projects.json"
 
 export default function Navigation() {
   return (

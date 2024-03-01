@@ -11,10 +11,15 @@
     align-items: center;
     gap: 8px;
     display: inline-flex;
+    transition: background-color 150ms;
 
     flex: 1 0 calc(50% - 16px);
     /* 50% width with a fixed margin of 16px between items */
     /* margin: 4px 8px; Fixed margin between elements */
+}
+
+.project-chip:hover {
+    background: rgba(157, 71, 198, 0.52);
 }
 
 .project-chip>img {

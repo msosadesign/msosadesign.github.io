@@ -29,6 +29,12 @@
     padding: 0;
     border-radius: 0;
     appearance: none;
+
+    transition: color 100ms;
+}
+
+.navigation-button:hover {
+    color: var(--primary-color-texts);
 }
 
 .active {

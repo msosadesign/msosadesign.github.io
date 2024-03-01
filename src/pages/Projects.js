@@ -1,4 +1,4 @@
-import { Navigate, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 // import Chip from "../components/Chip/Chip";
 import Navigation from "../components/Navigation/Navigation";
 import ProjectList from "../components/ProjectList/ProjectList";
@@ -14,6 +14,7 @@ export default function Projects() {
       </header>
       <div className="projects-content">
         <div className="projects-sidebar">
+          {/* These chips were meant to be used to filter projects by theme but were not used */}
           {/* <div className="project-filters">
             <Chip label="UI Design" />
             <Chip label="Frontend Development" />

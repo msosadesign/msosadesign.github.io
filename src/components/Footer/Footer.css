@@ -1,21 +1,22 @@
-#main-footer,
-#main-footer>div {
+.main-footer,
+.main-footer>div {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-#main-footer {
+.main-footer {
   padding: 56px 0 40px 0;
   gap: 64px;
+  width: 100%;
 }
 
-#main-footer>div {
+.main-footer>div {
   gap: 24px;
 }
 
-#main-footer a {
+.main-footer a {
   text-decoration: none;
 }
 

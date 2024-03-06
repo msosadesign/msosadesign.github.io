@@ -13,7 +13,7 @@ class Footer extends React.Component {
                     <h3>Interested in talking?</h3>
                     <div>
                         <SocialButton href="mailto:msosadesign@gmail.com" label="Send me an email" iconsrc={emailIcon} />
-                        <SocialButton href="https://github.com/msosadesign" label="GitHub" iconsrc={githubIcon} />
+                        <SocialButton href="https://github.com/msosadev" label="GitHub" iconsrc={githubIcon} />
                         <SocialButton href="https://www.linkedin.com/in/msosadev" label="LinkedIn" iconsrc={linkedinIcon} />
                     </div>
                 </div>

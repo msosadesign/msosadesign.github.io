@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section id="job-experience" className="job-experience wrapper">
-        <h2 className="hidden section-title">Job Experience</h2>
+        <h2 className="hidden section-title">Job Experiences</h2>
         <div className="jobs">
           <div className="card-list job-list">
             <Job

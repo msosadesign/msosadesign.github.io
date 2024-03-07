@@ -1,12 +1,12 @@
 import './App.css';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import ProjectArticle from './components/ProjectArticle/ProjectArticle';
 import projects from "./projects.json"
 import Error404 from './pages/Error404';
 
-let firstProject = projects[0].article;
+let firstProject = projects[0].id;
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/projects' element={<Projects />}>
-          <Route path='/projects/' element={<ProjectArticle href={firstProject} />} />
+          <Route index element={<Navigate to={firstProject} replace />} />
 
           {projects.map(project => (
             <Route key={project.id} path={project.id} element={<ProjectArticle href={project.article} />} />
